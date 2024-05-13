@@ -1,0 +1,10 @@
+:root {
+  --primary: #000000;
+  --accent: #fe000b;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--accent);
+}

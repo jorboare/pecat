@@ -1,3 +1,3 @@
 <script setup></script>
-<template><h1>Hero</h1></template>
+<template><h2>Hero</h2></template>
 <style scoped></style>
