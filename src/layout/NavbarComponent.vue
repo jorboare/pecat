@@ -26,10 +26,10 @@ onMounted(() => {
   <nav>
     <h1>Pecat</h1>
     <ul>
-      <li>{{ t('message.home') }}</li>
-      <li>{{ t('message.about') }}</li>
-      <li>{{ t('message.where') }}</li>
-      <li>{{ t('message.contact') }}</li>
+      <li>{{ t('navbar.home') }}</li>
+      <li>{{ t('navbar.about') }}</li>
+      <li>{{ t('navbar.where') }}</li>
+      <li>{{ t('navbar.contact') }}</li>
       <li>
         <select v-model="selectedLanguage" @change="changeLanguage">
           <option v-for="language in languageOptions" :key="language">{{ language }}</option>

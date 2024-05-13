@@ -1,9 +1,39 @@
 {
-  "message": {
+  "navbar": {
     "title": "Pecat",
     "home": "Inici",
     "about": "Qui som",
     "where": "On pecar",
     "contact": "Contacte"
+  },
+  "home": {
+    "title": "Açò no és un VI,és un PECAT,per al que no estàs preparat. O sí?",
+    "info": "Més info"
+  },
+  "about": {
+    "slogan1": "Peca",
+    "slogan2": "Fes l'amor",
+    "slogan3": "Oblida",
+    "info": "Informació de nosaltres, bodega y demes"
+  },
+  "contact": {
+    "title": "Pecat",
+    "slogan1": "Peca",
+    "slogan2": "Fes l'amor",
+    "slogan3": "Oblida",
+    "location": {
+      "title": "Uneixte",
+      "street": "Calle Cualquiera, 123",
+      "city": "12345 Cualquier Ciudad",
+      "email": "hola@unsitiogenial.es"
+    },
+    "schedule": {
+      "title": "Horari Comercial",
+      "week": "Dilluns a divendres: 09:00h - 18:00h",
+      "weekend": "Dissabte: 09:00h - 12:00h"
+    },
+    "socialMedia": {
+      "title": "Segueixnos"
+    }
   }
 }
