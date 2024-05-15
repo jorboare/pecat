@@ -8,7 +8,12 @@ import Contact from './components/ContactSection.vue'
 
 <template>
   <Navbar />
-  <Hero /> <About /><Where /><Contact />
+  <div class="page"><Hero /> <About /><Where /><Contact /></div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+</style>

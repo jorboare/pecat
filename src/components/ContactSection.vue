@@ -3,7 +3,7 @@ import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 </script>
 <template>
-  <div class="contact">
+  <div id="contact" class="contact">
     <div class="titleCont">
       <h2>{{ t('contact.title') }}</h2>
       <div class="titleTexts">
@@ -42,7 +42,6 @@ const { t } = useI18n()
 <style scoped>
 .contact {
   max-width: 1000px;
-  padding: 0 30px;
   margin: 100px auto;
 }
 

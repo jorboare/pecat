@@ -18,8 +18,8 @@ const { t } = useI18n()
 <style scoped>
 .about {
   max-width: 1000px;
-  padding: 0 30px;
-  margin: 100px auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .slogans {
   display: flex;

@@ -4,7 +4,7 @@ import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 </script>
 <template>
-  <div class="homeCont">
+  <div id="hero" class="homeCont">
     <div>
       <h2>{{ t('home.title') }}</h2>
       <button>{{ t('home.info') }}</button>
@@ -27,6 +27,7 @@ const { t } = useI18n()
 h2 {
   width: 500px;
   font-size: 4rem;
+  line-height: 4rem;
 }
 
 .imageCont {

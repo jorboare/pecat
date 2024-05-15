@@ -26,10 +26,18 @@ onMounted(() => {
   <nav>
     <h1>Pecat</h1>
     <ul>
-      <li>{{ t('navbar.home') }}</li>
-      <li>{{ t('navbar.about') }}</li>
-      <li>{{ t('navbar.where') }}</li>
-      <li>{{ t('navbar.contact') }}</li>
+      <a href="#hero">
+        <li>{{ t('navbar.home') }}</li>
+      </a>
+      <a href="#about">
+        <li>{{ t('navbar.about') }}</li>
+      </a>
+      <a href="#where">
+        <li>{{ t('navbar.where') }}</li>
+      </a>
+      <a href="#contact">
+        <li>{{ t('navbar.contact') }}</li>
+      </a>
       <li>
         <select v-model="selectedLanguage" @change="changeLanguage">
           <option v-for="language in languageOptions" :key="language">{{ language }}</option>
@@ -50,20 +58,28 @@ nav {
 }
 h1 {
   color: var(--primary);
-  font-size: 50px;
+  font-size: 70px;
   text-transform: uppercase;
+  font-weight: 900;
 }
 ul {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   height: 40px;
   align-items: end;
 }
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
 li {
   text-decoration: none;
   list-style-type: none;
   font-weight: bold;
   cursor: pointer;
+  text-transform: uppercase;
+  font-size: 30px;
 }
 select {
   border: none;

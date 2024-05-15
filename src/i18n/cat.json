@@ -16,6 +16,11 @@
     "slogan3": "Oblida",
     "info": "Informació de nosaltres, bodega y demes"
   },
+  "where": {
+    "title": "On pecar",
+    "text": "Listas donde nos puedes encontrar, asi como restaurantes, tiendas o sitios de especialidad",
+    "tour": "Tour de presentación pecar"
+  },
   "contact": {
     "title": "Pecat",
     "slogan1": "Peca",
