@@ -44,4 +44,33 @@ h2 {
   text-transform: uppercase;
   font-size: 25px;
 }
+
+@media (max-width: 1020px) {
+  #where {
+    margin: 0 20px;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .locations {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+  }
+  .locations p {
+    width: auto;
+  }
+  .tour {
+    margin: 0 10px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
 </style>

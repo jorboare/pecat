@@ -43,6 +43,7 @@ const { t } = useI18n()
 .contact {
   max-width: 1000px;
   margin: 100px auto;
+  padding-bottom: 50px;
 }
 
 .titleCont {
@@ -91,5 +92,25 @@ h2 {
 .locationTexts p {
   margin: 0;
   padding: 5px 0;
+}
+
+@media (max-width: 1249px) {
+  .titleCont {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .contact {
+    max-width: 1000px;
+    margin: 0 40px;
+  }
+  .boxesCont {
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 </style>

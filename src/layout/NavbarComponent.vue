@@ -21,23 +21,20 @@ onMounted(() => {
     selectedLanguage.value = 'CAT'
   }
 })
+// Using scrollIntoView() function to achieve the scrolling
+function scrollTo(id) {
+  const el = document.getElementById(id)
+  if (el) el.scrollIntoView({ behavior: 'smooth' })
+}
 </script>
 <template>
   <nav>
     <h1>Pecat</h1>
     <ul>
-      <a href="#hero">
-        <li>{{ t('navbar.home') }}</li>
-      </a>
-      <a href="#about">
-        <li>{{ t('navbar.about') }}</li>
-      </a>
-      <a href="#where">
-        <li>{{ t('navbar.where') }}</li>
-      </a>
-      <a href="#contact">
-        <li>{{ t('navbar.contact') }}</li>
-      </a>
+      <li @click="scrollTo('hero')">{{ t('navbar.home') }}</li>
+      <li @click="scrollTo('about')">{{ t('navbar.about') }}</li>
+      <li @click="scrollTo('where')">{{ t('navbar.where') }}</li>
+      <li @click="scrollTo('contact')">{{ t('navbar.contact') }}</li>
       <li>
         <select v-model="selectedLanguage" @change="changeLanguage">
           <option v-for="language in languageOptions" :key="language">{{ language }}</option>
@@ -50,24 +47,35 @@ onMounted(() => {
 <style scoped>
 nav {
   height: 100px;
-  padding: 0 40px;
-  border-bottom: 3px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--accent);
 }
+
 h1 {
   color: var(--primary);
   font-size: 70px;
   text-transform: uppercase;
   font-weight: 900;
+  margin-left: 40px;
 }
+
 ul {
   display: flex;
   gap: 20px;
-  height: 40px;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
   align-items: end;
+  margin-right: 40px;
 }
+
 a {
   text-decoration: none;
   color: var(--primary);
@@ -80,10 +88,23 @@ li {
   cursor: pointer;
   text-transform: uppercase;
   font-size: 30px;
+  padding: 0;
+  margin: 0;
 }
 select {
   border: none;
   background-color: transparent;
   font-weight: bold;
+}
+
+@media (max-width: 1149px) {
+  li {
+    font-size: 20px;
+  }
+}
+@media (max-width: 904px) {
+  ul {
+    display: none;
+  }
 }
 </style>

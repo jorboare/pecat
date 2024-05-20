@@ -49,4 +49,19 @@ button {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+@media (max-width: 985px) {
+  .homeCont {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 545px) {
+  h2 {
+    width: 100%;
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
 </style>

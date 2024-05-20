@@ -46,4 +46,41 @@ const { t } = useI18n()
   height: 450px;
   background-color: black;
 }
+
+@media (max-width: 600px) {
+  .slogans {
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .slogans p {
+    line-height: 0rem;
+  }
+
+  .imgDiv {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    background-color: black;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .slogans {
+    justify-content: center;
+    align-items: center;
+  }
+  .infoCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .infoCont p {
+    margin: 0 10px;
+  }
+}
 </style>
